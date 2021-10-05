@@ -25,7 +25,6 @@ function Header() {
 
 	React.useEffect(() => {
 		axios.get(url).then(({ data }) => {
-			console.log(data)
 			setWeather((prev) => [...prev, Math.round(data.main.temp)])
 		})
 	}, [])
@@ -48,11 +47,17 @@ function Header() {
 		return day + ' ' + month + ' ' + year + ' '
 	}
 
+	const change = (option) => {
+		localStorage.setItem('lang', option.target.value)
+		window.location.reload()
+	}
+
+	const lang = localStorage.getItem('lang') || 'ru'
+
 	return (
 		<div className='header'>
 			<div className='header__content'>
 				<div className='time'>
-					{' '}
 					{hourse}:{minutes}
 				</div>
 				<div className='weather'>

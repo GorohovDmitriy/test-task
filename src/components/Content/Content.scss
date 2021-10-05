@@ -5,7 +5,6 @@
 	justify-content: center;
 
 	.items__block {
-		cursor: pointer;
 		position: relative;
 		background: #ffffff;
 		box-shadow: 2px 11px 16px rgba(100, 105, 108, 0.24);
@@ -28,6 +27,7 @@
 			color: #2b2e2d;
 		}
 		img {
+			cursor: pointer;
 			position: absolute;
 			top: 30px;
 			left: 30px;
