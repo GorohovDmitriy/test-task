@@ -1,0 +1,38 @@
+.content {
+	padding: 0 calc(3.5vw + 5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.items__block {
+		cursor: pointer;
+		position: relative;
+		background: #ffffff;
+		box-shadow: 2px 11px 16px rgba(100, 105, 108, 0.24);
+		border-radius: 45px;
+		width: 300px;
+		height: 250px;
+		margin-right: 30px;
+		margin-top: 60px;
+		p {
+			text-align: right;
+			padding-top: 20px;
+			padding-right: 20px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			text-align: right;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			font-feature-settings: "tnum" on, "lnum" on;
+			color: #2b2e2d;
+		}
+		img {
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			padding-top: 100px;
+			padding-left: 25px;
+		}
+	}
+}
